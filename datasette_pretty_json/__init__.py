@@ -3,7 +3,7 @@ import jinja2
 import json
 
 
-@hookimpl
+@hookimpl(trylast=True)
 def render_cell(value):
     if not isinstance(value, str):
         return None
