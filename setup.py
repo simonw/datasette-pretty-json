@@ -24,4 +24,5 @@ setup(
     packages=["datasette_pretty_json"],
     entry_points={"datasette": ["pretty_json = datasette_pretty_json"]},
     install_requires=["datasette"],
+    extras_require={"test": ["pytest"]},
 )
