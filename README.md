@@ -1,8 +1,10 @@
 # datasette-pretty-json
 
 [![PyPI](https://img.shields.io/pypi/v/datasette-pretty-json.svg)](https://pypi.org/project/datasette-pretty-json/)
-[![Travis CI](https://travis-ci.com/simonw/datasette-pretty-json.svg?branch=master)](https://travis-ci.com/simonw/datasette-pretty-json)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-pretty-json/blob/master/LICENSE)
+[![Changelog](https://img.shields.io/github/v/release/simonw/datasette-pretty-json?include_prereleases&label=changelog)](https://github.com/simonw/datasette-pretty-json/releases)
+[![Tests](https://github.com/simonw/datasette-pretty-json/workflows/Test/badge.svg)](https://github.com/simonw/datasette-pretty-json/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-pretty-json/blob/main/LICENSE)
+
 
 [Datasette](https://github.com/simonw/datasette) plugin that pretty-prints any column values that are valid JSON objects or arrays.
 
