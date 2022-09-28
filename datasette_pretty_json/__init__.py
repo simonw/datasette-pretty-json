@@ -1,5 +1,5 @@
 from datasette import hookimpl
-import jinja2
+from markupsafe import Markup, escape
 import json
 
 
@@ -17,8 +17,4 @@ def render_cell(value):
         data = json.loads(value)
     except ValueError:
         return None
-    return jinja2.Markup(
-        '<pre>{data}</pre>'.format(
-            data=jinja2.escape(json.dumps(data, indent=4))
-        )
-    )
+    return Markup("<pre>{data}</pre>".format(data=escape(json.dumps(data, indent=4))))
