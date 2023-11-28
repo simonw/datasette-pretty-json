@@ -13,7 +13,7 @@ import pytest
         # JSON values should be pretty-printed
         (
             '{"foo": {"bar": 1}}',
-            """<pre>{
+            """<pre style="white-space: pre-wrap">{
     &#34;foo&#34;: {
         &#34;bar&#34;: 1
     }
@@ -21,7 +21,7 @@ import pytest
         ),
         (
             '[{"foo": {"bar": 1}}]',
-            """<pre>[
+            """<pre style="white-space: pre-wrap">[
     {
         &#34;foo&#34;: {
             &#34;bar&#34;: 1

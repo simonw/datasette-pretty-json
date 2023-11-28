@@ -17,4 +17,8 @@ def render_cell(value):
         data = json.loads(value)
     except ValueError:
         return None
-    return Markup("<pre>{data}</pre>".format(data=escape(json.dumps(data, indent=4))))
+    return Markup(
+        '<pre style="white-space: pre-wrap">{data}</pre>'.format(
+            data=escape(json.dumps(data, indent=4))
+        )
+    )
