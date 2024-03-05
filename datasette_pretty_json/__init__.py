@@ -19,6 +19,6 @@ def render_cell(value):
         return None
     return Markup(
         '<pre style="white-space: pre-wrap">{data}</pre>'.format(
-            data=escape(json.dumps(data, indent=4))
+            data=escape(json.dumps(data, indent=4, ensure_ascii=False))
         )
     )
